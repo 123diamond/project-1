@@ -1,0 +1,209 @@
+:root{
+    --highlight-color:#8484bf;
+    --primary-color: #0f2f44;
+    --light-color: #ffffff;
+    --hover-color: #ffc712;
+    --icon-color:#999999;
+    --text-color:#444444;
+    --border-color: #dedede;
+    --hover-background: #fff9e6;
+    --heading-font: "Abril Fatface", serif;
+    --secondary-font: "Ubuntu", sans-serif;
+    --body-font: "Open Sans", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+body{
+    font-family: var(--body-font);
+}
+h1,h2{
+    font-family: var(--primary-font);
+}
+h3,h4,h5,h6,a,button{
+    font-family: var(--secondary-font);
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 1170px;
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.aling-center {
+    align-items: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.w-50 {
+    width: calc(100% / 3);
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}
+.text-justify {
+    text-align: justify;
+}
+/* common css end */
+
+
+/* top bar section css start */
+#top_bar {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    font-family: var(--secondary-font);
+}
+#top_bar p {
+    line-height: 24px;
+    padding: 13px 0;
+}
+/* top bar section css end */
+
+
+
+/* nav section css start */
+#nav .menu ul li a{
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    font-weight: 500;
+    padding: 30.5px 19px;
+    display: inline-block;
+}
+#nav .menu ul li a:hover{
+    color: var(--hover-color);
+    background-color: var(--hover-background);
+    transition: .4s;
+}
+#nav .menu ul li button{
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--border-color);
+    background-color: aqua;
+    color:var(--icon-color);
+    margin-left: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#nav .menu ul li button:hover {
+    color: var(--hover-color);
+    background-color: var(--hover-background);
+    transition: .4s;
+}
+/* nav section css end */
+
+
+
+
+
+/* hero section start */
+#hero{
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+
+}
+#hero h3{
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    color: #0f2f44;
+    text-transform: uppercase;
+    
+}
+#hero h1{
+    font-size: 80px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    color: #0f2f44;
+    text-transform: uppercase;
+}
+#hero h4{
+    color: var(--highlight-color);
+   
+}
+#hero .inner_container{
+    width: 39%;
+}
+#hero a{
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: var(--light-color);
+    background-color: var(--highlight-color);
+    display: inline-block;
+    padding: 12.5px 21px ;
+    border-radius: 8px;
+}
+#hero a:hover{
+    background-color: var(--light-color);
+    color: var(--highlight-color);
+    transition: 0.3s;
+}
+#hero button{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--light-color);
+    border: none;
+    color: var(--highlight-color);
+    font-size: 15px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+#hero button:hover{
+    background-color: var(--highlight-color);
+    color: var(--light-color);
+    transition: 0.3s;
+}
+
+
+
+#hero-2{
+    height: 650px;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+#hero-2 h2{
+    font-size: 40px;
+    font-weight: 800;
+    color: #0f2f44;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+#hero-2 a{
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 10px 10px ;
+    border-radius: 8px;
+    margin: 0 10px;
+}
+#hero-2 p{
+    padding: 10px;
+}
+#hero-2 .inner_container{
+    width: 55%;
+}
+
+/* hero section end */
